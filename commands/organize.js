@@ -3,9 +3,9 @@ let fs=require('fs');
 let path=require('path');
 let types=require('../utility/utility.js');
 function organizeFn(dirPath){
-    // console.log('organize cmd implemented for',dirPath);
+   
 
-    //1. input->directory path given
+    //1. directory path given
     let destPath;
     if(dirPath==undefined){
         console.log('please enter the path');
@@ -14,7 +14,7 @@ function organizeFn(dirPath){
     }else{
         let doesExsist=fs.existsSync(dirPath);
         if(doesExsist){
-            //2.create-> organized_filea ->directory
+            //2.creating  organized_files directory
              destPath=path.join(dirPath,'organize_files'); //making the path
             if(fs.existsSync(destPath)==false){
                 fs.mkdirSync(destPath);//making the directory

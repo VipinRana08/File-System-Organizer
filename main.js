@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 let fs=require('fs');
 let path=require('path');
-let helpObj=require('./commands/help');
+
 let organizeObj=require('./commands/organize');
 let treeObj=require('./commands/tree');
 
@@ -17,9 +17,7 @@ switch(command){
     case "organize":
         organizeObj.organizeKey(inputArr[1]);
         break;
-    case "help":
-        helpObj.helpKey();
-        break;
+  
     default:
         console.log('command not found:😢'); 
         break;   

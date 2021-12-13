@@ -9,7 +9,7 @@ function treeFn(dirPath){
         // console.log('please enter the path');
         
         treeHelper(process.cwd(),""); 
-        return;
+        //return;
     }else{
         let doesExsist=fs.existsSync(dirPath);
         if(doesExsist){
